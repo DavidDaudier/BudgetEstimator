@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/drawable-v24/ic_info_black_24dp.xml" value="0.1145" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.109" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1145" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/drawable-v24/ic_notifications_black_24dp.xml" value="0.1145" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/drawable-v24/ic_sync_black_24dp.xml" value="0.1085" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/drawable/bg_edit.xml" value="0.1145" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/drawable/bg_save.xml" value="0.1145" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/drawable/bg_spinner2.xml" value="0.1235" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/drawable/ic_expense.xml" value="0.1145" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/drawable/ic_income.xml" value="0.1145" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/font/font.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/activity_start.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/activity_transaction.xml" value="0.14" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/activity_transaction_modifier.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/date_time_picker.xml" value="0.203125" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/delete_transaction.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/dialog_fab_add_pop_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/dialog_transaction_infos.xml" value="0.203125" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/fragment_main.xml" value="0.18" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/item_categories.xml" value="0.18" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/item_periodicite.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/layout/row_list_transaction.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/menu/menu.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/menu/menu_main.xml" value="0.18" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/menu/menu_transaction.xml" value="0.16" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/mipmap-xxhdpi/ic_launcher.xml" value="0.109" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/xml/pref_data_sync.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/BudgetEstimator/app/src/main/res/xml/pref_general.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

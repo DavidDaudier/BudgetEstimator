@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="@dimen/h3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/bg_delete_transaction">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageViewTypeTransaction"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_expense_down"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/textViewTypeTransaction"
+                style="@style/AppTheme.textviewTransactionDialogDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/depense"
+                android:fontFamily="@font/gothicbold"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/h1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/h2">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_money" />
+
+            <EditText
+                android:id="@+id/editMontantTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Montant"
+                android:inputType="numberDecimal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/bookosb"
+                android:singleLine="true"
+                android:textColor="#4627f3"
+                android:textColorHint="#a8a8aa"
+                android:textSize="20sp"
+                android:background="#d1c9fe"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/imageViewCategorieTransaction"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rapport" />
+
+            <TextView
+                android:id="@+id/textViewCategorieTransaction"
+                style="@style/AppTheme.textviewTransactionDialogDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categorie"
+                android:fontFamily="@font/gothicbold"
+                android:textColor="#4627f3"
+                android:hint="#a8a8aa"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/calendar" />
+
+            <EditText
+                android:id="@+id/editDateTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Date"
+                android:inputType="textPersonName"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/bookosb"
+                android:singleLine="true"
+                android:textColor="#4627f3"
+                android:textColorHint="#a8a8aa"
+                android:textSize="20sp"
+                android:background="#d1c9fe"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/notes"/>
+
+            <EditText
+                android:id="@+id/editNoteTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Notes"
+                android:inputType="textPersonName"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/gothicbold"
+                android:singleLine="true"
+                android:textColor="#4627f3"
+                android:textColorHint="#a8a8aa"
+                android:textSize="20sp"
+                android:background="#d1c9fe"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/periode" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerPeriodeTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/arrayPeriodes"
+                android:theme="@style/Spinner1"
+                android:fontFamily="@font/gothicbold"
+                android:textColor="#4627f3"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_delete_transaction"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDeleteTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/supprimer"
+                android:textSize="20dp"
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_save"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonUpdateTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/modifier"
+                android:textSize="20dp"
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:layout_marginStart="15dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_save"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

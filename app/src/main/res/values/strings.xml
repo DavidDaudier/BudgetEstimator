@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Budget Estimator</string>
+    <string name="action_settings">Parametre</string>
+    <string name="title_activity_settings">Parametre</string>
+
+    <string name="depense">Depense</string>
+    <string name="budget">Budget</string>
+    <string name="title_activity_budget">BudgetActivity</string>
+    <string name="title_activity_depense">DepenseActivity</string>
+    <string name="add">add</string>
+    <string name="voyage">Voyage</string>
+    <string name="achat">Achat</string>
+    <string name="education">Education</string>
+    <string name="nourriture">Restoration</string>
+    <string name="louer">Louer</string>
+    <string name="Ma_banque">Louer</string>
+    <string name="autre">Autre</string>
+
+    <string name="montant">Montant</string>
+    <string name="categorie">Categories</string>
+    <string name="note">Note</string>
+    <string name="date">Date</string>
+    <string name="periode">Périodicité</string>
+    <string name="valider">VALIDER</string>
+
+    <string-array name="arrayPeriodes">
+        <item>Une fois seulement</item>
+        <item>Chaque Jour</item>
+        <item>Chaque Semaine</item>
+        <item>Chaque mois</item>
+    </string-array>
+
+    <string-array name="arrayCategories">
+        <item>Aliments</item>
+        <item>Factures</item>
+        <item>Transport</item>
+        <item>Voyage</item>
+        <item>Achat</item>
+        <item>Education</item>
+        <item>Restoration</item>
+        <item>Autre</item>
+    </string-array>
+
+    <string name="today">Aujourd\'hui</string>
+    <string name="transport">Transport</string>
+    <string name="ajuster_budget">Ajouter un Budget</string>
+    <string name="ajouter_depense">Ajouter une Dépense</string>
+    <string name="txt_perte">Vos PERTE pour ce mois</string>
+    <string name="txt_gain">Vos GAIN pour ce mois</string>
+<!--    <string name="txt_aucun">Aucun Transaction</string>-->
+    <string name="gourdes">Gourdes</string>
+    <string name="zero">0 G</string>
+
+    <string name="montant_erreur">Veuillez saisir un montant</string>
+    <string name="msg_reussi">Transaction ajouter avec succes</string>
+    <string name="salaire">Salaire</string>
+    <string name="cadeau">Cadeau</string>
+    <string name="vente">Vente</string>
+    <string name="recompense">Recompense</string>
+    <string name="mois_proche">Mois Futures</string>
+    <string name="ce_mois">Ce mois-ci</string>
+    <string name="mois_dernier">Mois dernier</string>
+    <string name="chaque_jour">Chaque jour</string>
+    <string name="once">Une fois seulement</string>
+    <string name="chaque_semaine">Chaque semaine</string>
+    <string name="chaque_mois">Chaque mois</string>
+    <string name="question_add">Que voudriez vous ajouter ?</string>
+
+    <string name="title_activity_start">StartActivity</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="modifier">Modifier</string>
+</resources>

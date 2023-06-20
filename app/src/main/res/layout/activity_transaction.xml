@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="#f3f5f7"
+    tools:context=".Views.TransactionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/h3">
+
+            <TextView
+                android:id="@+id/textmontant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/montant"
+                android:fontFamily="@font/gothicbold"
+                android:textColor="#b1a5de"
+                android:textSize="@dimen/h3"
+                android:focusable="false"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/montbudget"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Quantite"
+                android:inputType="number"
+                android:fontFamily="@font/bookosb"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#a8a8aa"
+                android:background="@drawable/bg_edit"
+                android:textSize="20sp" />
+         </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/h3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categorie"
+                android:textColor="#b1a5de"
+                android:textSize="@dimen/h3"
+                android:fontFamily="@font/gothicbold"
+                android:focusable="false"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:elevation="0dp">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/catbubget"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/arrayCategories"
+                android:theme="@style/Spinner"
+                android:spinnerMode="dropdown"
+                android:elevation="0dp"
+                android:background="@drawable/bg_edit" />
+        </LinearLayout>
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/h3">
+
+            <TextView
+                android:id="@+id/textdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:textSize="@dimen/h3"
+                android:fontFamily="@font/gothicbold"
+                android:text="@string/date"
+                android:textColor="#b1a5de"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/datebudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/gothicbold"
+                android:hint="Aujourd'hui"
+                android:textColorHint="#a8a8aa"
+                android:background="@drawable/bg_edit"/>
+
+         </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="0dp">
+
+            <TextView
+                android:id="@+id/textviewNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/note"
+                android:textColor="#b1a5de"
+                android:focusable="false"
+                android:fontFamily="@font/gothicbold"
+                android:textSize="@dimen/h3"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/notebudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/h3"
+                android:inputType="none"
+                android:maxLines="3"
+                android:fontFamily="@font/gothicbold"
+                android:textSize="20sp"
+                android:background="@drawable/bg_edit"
+                android:textColor="@color/BLACK" />
+         </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/h3">
+
+            <TextView
+                android:id="@+id/textviewF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/periode"
+                android:textColor="#b1a5de"
+                android:focusable="false"
+                android:fontFamily="@font/gothicbold"
+                android:textSize="@dimen/h3"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/periodeBudget"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/arrayPeriodes"
+                android:theme="@style/Spinner2"
+                android:elevation="0dp"
+                android:background="@drawable/bg_edit"/>
+         </LinearLayout>
+
+         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Valider"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sauvegarder"
+             android:fontFamily="@font/gothicbold"
+            android:textSize="20dp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_save"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

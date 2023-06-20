@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Views.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/appbar_padding_top"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/bg_solde"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dbe0f4"
+            app:tint="#5eb64f"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".Views.MainActivity">
+
+            <androidx.viewpager.widget.PagerTabStrip
+                android:id="@+id/pagerTitleStrip"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="top"
+                android:background="#4627f3" />
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_menuAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4627f3"
+        android:text="  Menu"
+        android:tint="@color/cardview_shadow_end_color"
+        app:icon="@drawable/ic_menu"
+        app:iconGravity="end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_AppDepense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/cardview_light_background"
+        app:fabSize="normal"
+        android:tint="@color/cardview_shadow_end_color"
+        app:borderWidth="0dp"
+        app:rippleColor="@color/black"
+        app:tint="#f91626"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fab_menuAdd"
+        app:layout_constraintEnd_toEndOf="@+id/fab_menuAdd"
+        android:src="@drawable/ic_expense" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/txtCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:contentPadding="5dp"
+        android:visibility="gone"
+        android:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_AddBudget"
+        app:layout_constraintEnd_toStartOf="@+id/fab_AddBudget"
+        app:layout_constraintTop_toTopOf="@+id/fab_AddBudget" >
+
+        <TextView
+            android:id="@+id/fab_AddDepense_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Budget"
+            android:textColor="#5eb64f"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_AddBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:fabSize="normal"
+        android:backgroundTint="@color/cardview_light_background"
+        android:clickable="true"
+        android:src="@drawable/ic_income"
+        android:tint="@color/cardview_shadow_end_color"
+        app:tint="#5eb64f"
+        android:visibility="gone"
+        app:borderWidth="0dp"
+        app:rippleColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/fab_AppDepense"
+        app:layout_constraintEnd_toEndOf="@+id/fab_AppDepense"
+        app:layout_constraintStart_toStartOf="@+id/fab_AppDepense"
+         />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/txtCardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:contentPadding="10dp"
+        android:visibility="gone"
+        android:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_AppDepense"
+        app:layout_constraintEnd_toStartOf="@+id/fab_AppDepense"
+        app:layout_constraintTop_toTopOf="@+id/fab_AppDepense"  >
+
+        <TextView
+            android:id="@+id/fab_AddBudget_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Depense"
+            android:textColor="#f91626"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
